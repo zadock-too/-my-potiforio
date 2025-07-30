@@ -1,0 +1,45 @@
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom font for better readability */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Button focus outline removal */
+button:focus,
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #6366f1; /* Indigo-500 */
+}
+
+/* Mobile menu transition (JS controlled visibility) */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Optional hover effect for project cards */
+#projects .shadow:hover {
+  transform: translateY(-4px);
+  transition: transform 0.3s ease;
+}
+
+/* Contact form enhancements */
+form input,
+form textarea {
+  transition: border 0.2s ease-in-out;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #6366f1;
+}
+
+/* Footer styling (fallback if Tailwind classes break) */
+footer {
+  background-color: #f9fafb;
+  color: #4b5563;
+}
